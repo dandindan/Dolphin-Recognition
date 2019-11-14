@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Norican|Pridi|Ultra&display=swap" rel="stylesheet">
-  <link  class ="ico" rel="shortcut icon" href="images/Dolphin.ico" type="image/x-icon" />
+  <link class="ico" rel="shortcut icon" href="images/Dolphin.ico" type="image/x-icon" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
   <script src="https://unpkg.com/ml5@0.4.2/dist/ml5.min.js"></script>
@@ -20,25 +20,27 @@
   <div class="top-container">
     <h1>Dolphin recognition.</h1>
     <!-- <img class="dolphin" src="https://media.giphy.com/media/ZXY6X9tDaFSa5jvxIV/source.gif" alt="" srcset=""> -->
-<br>
-<br>
-    <p class="program">To recognize  the <span class="pro">Dolphin</span> in your image</p>
-<p class="program">just upload  images from your files</p>
-  <hr>
-  </div>
-  <div class="middle-container">
     <br>
-      <div id="sketch-holder">
-          <!-- Our sketch will go here! -->
-        </div>
-    <hr>
+    <br>
+    <p class="program">To recognize the <span class="pro">Dolphin</span> in your image</p>
+    <p class="program">just upload images from your files</p>
   </div>
- 
 
+  <div id="drop_zone" class="middle-container">
+      <input type="file" id="files" name="files[]" multiple />
+    <p>Drag & Drop your files here</p>
+    <output id="list"></output>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 
   <div class="bottom-container">
 
-    <p>©  Yaly Mevorach & Maoz Lahav 2019 </p>
+    <p>© Yaly Mevorach & Maoz Lahav 2019 </p>
   </div>
 
 </body>

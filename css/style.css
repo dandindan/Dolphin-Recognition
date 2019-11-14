@@ -34,9 +34,11 @@ h1 {
 
 .middle-container {
     background-color:rgb(55, 52, 125);
-    margin: 0;
+    margin: 30px auto;
     padding: 20px;
     color: #f7f3faa1;
+    border: dotted #9527e9 6px;
+    width: 60%;
    
    
 }

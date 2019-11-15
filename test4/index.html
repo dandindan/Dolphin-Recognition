@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main id="content" role="main">
+    
+    <div class="panel">
+      <h2 class="panel-head">click or drag file</h2>
+      <div class="panel-content">
+        <label for="image">
+          <form action="" class="image-select" data-droppable="">
+            <input id="image" type="file" data-droppable-input=""/>
+            <i class="fa fa-camera fa-2x image-select__icon"></i>
+            <div class="image-select__message"></div>
+            <div class="bg-image aspect-square"
+                 style="background-image: url('http://placekitten.com/g/300/300');" data-droppable-image=""></div>
+          </form>
+        </label>
+      </div>
+    </div>
+    
+  </main>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body>
+
+</html>

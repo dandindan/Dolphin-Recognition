@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kaushan+Script|Norican|Pridi|Ultra&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      class="ico"
+      rel="shortcut icon"
+      href="images/Dolphin.ico"
+      type="image/x-icon"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.2/dist/ml5.min.js"></script>
+    <script src="script/sketch.js"></script>
+    <title>Dolphin Recognition</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Norican|Pridi|Ultra&display=swap" rel="stylesheet">
-  <link  class ="ico" rel="shortcut icon" href="images/Dolphin.ico" type="image/x-icon" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
-  <script src="https://unpkg.com/ml5@0.4.2/dist/ml5.min.js"></script>
-  <script src="script/sketch.js"></script>
+  <body>
+    <div class="top-container">
+      <h1>Dolphin Recognition</h1>
+      <img
+        class="dolphin"
+        src="https://media.giphy.com/media/ZXY6X9tDaFSa5jvxIV/source.gif"
+        alt="Dolphin Animation"
+      />
+      <p class="program">
+        To recognize the <span class="pro">Dolphins</span> in your image,<br />
+        upload an image from your files.
+      </p>
+      <hr />
+    </div>
 
-  <title>Dolphin !</title>
-</head>
-
-<body>
-  <div class="top-container">
-    <h1>Dolphin recognition.</h1>
-    <img class="dolphin" src="https://media.giphy.com/media/ZXY6X9tDaFSa5jvxIV/source.gif" alt="" srcset="">
-<br>
-<br>
-    <p class="program">To recognize  the <span class="pro">Dolphin</span> in your image</p>
-<p class="program">just upload an image from your files</p>
-
-  <hr>
-  </div>
-  <div class="middle-container">
+    <div class="middle-container">
       <div id="sketch-holder">
-          <!-- Our sketch will go here! -->
-        </div>
-    <hr>
-  </div>
- 
+        <!-- Sketch will go here -->
+      </div>
+      <hr />
+    </div>
 
-
-  <div class="bottom-container">
-
-    <p>©  Yaly Mevorach & Maoz Lahav 2019 </p>
-  </div>
-
-</body>
-
+    <div class="bottom-container">
+      <p>© Maoz Lahav & Yaly Mevorach 2019</p>
+    </div>
+  </body>
 </html>

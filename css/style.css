@@ -1,75 +1,109 @@
-/* font-family: 'Norican', cursive;
-font-family: 'Ultra', serif;
-font-family: 'Pridi', serif; */
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+/* General Body Styling */
 body {
-    background-color:rgb(55, 52, 125);
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient from teal to navy */
     margin: 0;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff; /* Light gray text for readability */
+    overflow: hidden; /* Prevent scrolling */
+    height: 100vh; /* Fit entire content on one screen */
 }
-.ico{
-    color: rgb(30, 133, 251);
-}
+
+/* Header Styling */
 h1 {
-    
-    font-family: 'Kaushan Script', cursive;
-    font-size: 5rem;
-    /* width: 7%; */
-    margin: 0 ;
-    
-}
-
-.top-container {
-    background-color: rgb(55, 52, 125);
-    color: #f7f3fadc;
-    position: relative;
-    margin-left: 0;
-    padding:0;
-    padding-top: 30px;
-}
-.dolphin{
-     position: absolute; 
-    width: 255px;
-}
-
-.middle-container {
-    background-color:rgb(55, 52, 125);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
     margin: 0;
+    padding: 20px 0;
+    color: #38cce3b6; /* Bright lime green for pop */
+}
+
+/* Top Container */
+.top-container {
+    background: transparent;
+    position: relative;
     padding: 0;
-   
 }
+
+/* Dolphin Image */
+.dolphin {
+    position: absolute;
+    width: 180px; /* Smaller image for better fit */
+    top: 40px;
+    right: 90px;
+}
+
+/* Middle Container */
+.middle-container {
+    background: transparent;
+    padding: 20px;
+}
+
+/* Bottom Container */
 .bottom-container {
-    background-color: rgb(55, 52, 125);
-    color: #f7f3faa1;
-   
-}
-.pro{
-    animation:blinkingText 3s ease-in-out infinite;
-    color:#f7f3faa1;
-    /* transition: opacity 7s ease-in-out infinite; */
-     text-decoration: underline;
-    /* background-color: #b07ae4;  */
-    /* opacity: 1; */
-}
-@keyframes blinkingText{
-    0%{     background-color: #ffee02ed;    }
-    25%{    background-color: transparent; }
-    50%{    background-color: transparent; }
-    75%{    background-color: transparent; }
-    100%{   background-color: #ffee02ed;    }
+    background: transparent;
+    padding: 10px;
+    font-size: 1.3rem; /* Small text for footer */
+    color: #d5d2d2; /* Muted gray for footer text */
 }
 
-.program{
-    margin-top: 0%;
-   color: #f7f3faa1;
+/* Flashing Text Animation */
+.pro {
+    animation: blinkingText 3s ease-in-out infinite;
+    color: #5b7fc8; /* Bright coral for highlight */
+    text-decoration-thickness:bolder ;
+}
+
+@keyframes blinkingText {
+    0% { background-color: transparent; }
+    25% { background-color: transparent; }
+    50% { background-color: #ffffff; }
+    75% { background-color: transparent; }
+    100% { background-color: transparent; }
+}
+
+/* Program Paragraph Styling */
+.program {
+    margin: 10px 0;
+    color: #f7f7f7; /* Light text for readability */
     font-size: 1.2rem;
-    font-family: 'Ultra', serif;
-    /* font-family:Helvetica, sans-serif ; */
 }
 
-hr{
-    border: dotted #9527e9 6px;
-    border-bottom: none;
-    width: 20%;
-    margin: 100px auto;
+/* Horizontal Line Styling */
+hr {
+    border: solid #1500ff 2px; /* Lime green accent */
+    width: 80%; /* Stretching for modern feel */
+    margin: 20px auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .dolphin {
+        width: 150px;
+    }
+
+    .program {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .dolphin {
+        width: 120px;
+    }
+
+    .program {
+        font-size: 0.8rem;
+    }
 }

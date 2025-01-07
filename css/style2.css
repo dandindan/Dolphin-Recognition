@@ -1,0 +1,75 @@
+/* font-family: 'Norican', cursive;
+font-family: 'Ultra', serif;
+font-family: 'Pridi', serif; */
+
+body {
+    background-color:rgb(55, 52, 125);
+    margin: 0;
+    text-align: center;
+}
+.ico{
+    color: rgb(30, 133, 251);
+}
+h1 {
+    
+    font-family: 'Kaushan Script', cursive;
+    font-size: 5rem;
+    /* width: 7%; */
+    margin: 0 ;
+    
+}
+
+.top-container {
+    background-color: rgb(55, 52, 125);
+    color: #f7f3fadc;
+    position: relative;
+    margin-left: 0;
+    padding:0;
+    padding-top: 30px;
+}
+.dolphin{
+     position: absolute; 
+    width: 255px;
+}
+
+.middle-container {
+    background-color:rgb(55, 52, 125);
+    margin: 0;
+    padding: 0;
+   
+}
+.bottom-container {
+    background-color: rgb(55, 52, 125);
+    color: #f7f3faa1;
+   
+}
+.pro{
+    animation:blinkingText 3s ease-in-out infinite;
+    color:#f7f3faa1;
+    /* transition: opacity 7s ease-in-out infinite; */
+     text-decoration: underline;
+    /* background-color: #b07ae4;  */
+    /* opacity: 1; */
+}
+@keyframes blinkingText{
+    0%{     background-color: #ffee02ed;    }
+    25%{    background-color: transparent; }
+    50%{    background-color: transparent; }
+    75%{    background-color: transparent; }
+    100%{   background-color: #ffee02ed;    }
+}
+
+.program{
+    margin-top: 0%;
+   color: #f7f3faa1;
+    font-size: 1.2rem;
+    font-family: 'Ultra', serif;
+    /* font-family:Helvetica, sans-serif ; */
+}
+
+hr{
+    border: dotted #9527e9 6px;
+    border-bottom: none;
+    width: 20%;
+    margin: 100px auto;
+}
